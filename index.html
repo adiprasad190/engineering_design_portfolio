@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | EngSci Portfolio</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-home">
+  <div class="bg-art" aria-hidden="true">
+    <span class="bg-orb orb-a"></span>
+    <span class="bg-orb orb-b"></span>
+    <span class="bg-orb orb-c"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <div style="display: flex; flex-direction: column; line-height: 1.2;">
+          <span>Engineering Design Portfolio</span>
+          <span style="font-size: 0.75rem; font-weight: 500; color: var(--muted);">Adi Prasad || ESC102</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="position-statement.html">Position Statement</a>
+        <a href="praxis-i-magnet-coaster.html">PRAXIS I</a>
+        <a href="civ102-bridge-project.html">CIV102 Bridge</a>
+        <a href="praxis-ii-handhold-motor-brush.html">PRAXIS II</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <article class="hero-main reveal">
+          <p class="eyebrow">Engineering Design Portfolio</p>
+          <h1>Documenting my understanding of Engineering Design.</h1>
+          <p>
+            This site documents my journey through first-year EngSci, including my evolving understanding of engineering design, my projects, and the CTMFs that guided the design process.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="position-statement.html">Explore Position Statement</a>
+              <a class="btn btn-secondary" href="praxis-i-magnet-coaster.html">Explore PRAXIS I</a>
+          </div>
+        </article>
+
+        <aside class="hero-panel reveal" data-delay="90">
+          <p class="panel-label">How To Navigate</p>
+          <p>Click on any of the following sections below to learn more about each project. All pages can be accessed through the navigation bar above as well.</p>
+          <div class="metric-grid">
+            <div class="metric">
+              <a href="position-statement.html">
+                <strong>Position Statement</strong>
+                <span>My understanding of Engineering Design</span>
+              </a>
+            </div>
+            <div class="metric">
+              <a href="praxis-i-magnet-coaster.html">
+                <strong>PRAXIS I: Magnet Coaster</strong>
+                <span>One Pager + CTMFs</span>
+              </a>
+            </div>
+            <div class="metric">
+              <a href="civ102-bridge-project.html">
+                <strong>CIV102: Bridge Project</strong>
+                <span>One Pager + CTMFs</span>
+              </a>
+            </div>
+            <div class="metric">
+              <a href="praxis-ii-handhold-motor-brush.html">
+                <strong>PRAXIS II: Handhold Motor Brush</strong>
+              <span>One Pager + CTMFs</span>
+            </div>
+          </div>
+          <p>Each project contains a summary of the project, and a list of CTMFs used throughout the design process. All refrences can be found on the last page.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="reveal">Portfolio Sections</h2>
+        <p class="section-intro reveal" data-delay="70">
+          A brief description of what you should expect to find in each section is shown below.
+        </p>
+        <a class="card link-card reveal" href="position-statement.html" style="margin-bottom: 2rem; display: block; border-left: 4px solid var(--brand); text-decoration: none;">
+          <h3>Position Statement</h3>
+          <p style="margin: 0; color: var(--text);">My understanding and explanation of engineering design, and how it has evolved throughout my first year of Engineering Science.</p>
+        </a>
+
+        <h3 class="reveal" style="margin-bottom: 1.2rem; color: var(--text); font-size: 1.15rem; font-weight: 600;">Featured Projects</h3>
+        <div class="cards three" style="margin-bottom: 2.5rem;">
+          <a class="card link-card reveal" href="praxis-i-magnet-coaster.html">
+            <h3>PRAXIS I: Magnet Coaster</h3>
+            <p>A simplistic yet innovative design to prevent the formation of aqueous residues.</p>
+            <div class="tag-row">
+              <span class="tag">Brainstorming 6-3-5</span>
+              <span class="tag">Pugh Charts</span>
+              <span class="tag">Prototyping</span>
+            </div>
+          </a>
+          <a class="card link-card reveal" href="civ102-bridge-project.html">
+            <h3>CIV102 Bridge Project</h3>
+            <p>Bridge design project testing our ability to apply theoretical knowledge to a practical design.</p>
+            <div class="tag-row">
+              <span class="tag">Requirements</span>
+              <span class="tag">Iterations</span>
+              <span class="tag">Proxy Testing</span>
+            </div>
+          </a>
+          <a class="card link-card reveal" href="praxis-ii-handhold-motor-brush.html">
+            <h3>PRAXIS II: Handhold Motor Brush</h3>
+            <p>A motorized, vinegar dispensing brush designed to remove chalk from rock climbing handholds</p>
+            <div class="tag-row">
+              <span class="tag">Stakeholder Analysis</span>
+              <span class="tag">Reference Designs</span>
+              <span class="tag">CAD Modelling</span>
+            </div>
+          </a>
+        </div>
+
+        <a class="card link-card reveal" href="references.html" style="display: block; border-left: 4px solid var(--muted); text-decoration: none;">
+          <h3>References</h3>
+          <p style="margin: 0; color: var(--text);">Technical sources, standards, and course materials that informed all design decisions.</p>
+        </a>
+      </div>
+    </section>
+    <div class="reveal" style="display: flex; justify-content: center; margin-top: 2rem;">
+              <a href="position-statement.html" class="btn btn-primary">Start Exploring</a>
+            </div>
+          </div>
+        </section> 
+
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-panel">
+        <p>Adi Prasad | ESC102  | Engineering Design Portfolio | [adiprasad190@gmail.com] </p>
+        <p>Updated <span data-year></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

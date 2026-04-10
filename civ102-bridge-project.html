@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIV102 Bridge Project | EngSci Portfolio</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-civ102">
+  <div class="bg-art" aria-hidden="true">
+    <span class="bg-orb orb-a"></span>
+    <span class="bg-orb orb-b"></span>
+    <span class="bg-orb orb-c"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <div style="display: flex; flex-direction: column; line-height: 1.2;">
+          <span>Engineering Design Portfolio</span>
+          <span style="font-size: 0.75rem; font-weight: 500; color: var(--muted);">Adi Prasad || ESC102</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="position-statement.html">Position Statement</a>
+        <a href="praxis-i-magnet-coaster.html">PRAXIS I</a>
+        <a href="civ102-bridge-project.html">CIV102 Bridge</a>
+        <a href="praxis-ii-handhold-motor-brush.html">PRAXIS II</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <article class="hero-main reveal">
+          <p class="eyebrow">CIV102</p>
+          <h1>Bridge Project</h1>
+          <p>
+            CIV102 introduced us to the engineering design of structures using theoretical equations and knowledge of how materials react under varying loads. The course culminates in a project where students must design a bridge to support a moving train of increasing weight. The goal is to create a bridge using only the given materials, that sustains as much weight as possible without the bridge breaking apart.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="praxis-ii-handhold-motor-brush.html">Go to PRAXIS II</a>
+            <a class="btn btn-secondary" href="references.html">Check References</a>
+          </div>
+        </article>
+
+        <aside class="hero-panel reveal" data-delay="90">
+          <p class="panel-label">Overview</p>
+          <p>
+            Designed and constructed a matboard and contact cement bridge to maximize load capacity under strict material and geometric constraints. After an iterative designing process, we presented our conclusions through design reports and drawings and tested the bridge.
+          </p>
+          <p class="panel-label">Stakeholders</p>
+          <div class="metric-grid">
+            <div class="metric">
+              <strong>Team 106</strong>
+              <span>My team, bridge designers</span>
+            </div>
+            <div class="metric">
+              <strong>TAs</strong>
+              <span>Evaluators & testers</span>
+            </div>
+            <div class="metric">
+              <strong>Classmates</strong>
+              <span>Competing Designers</span>
+            </div>
+            <div class="metric">
+              <strong>Course Professor</strong>
+              <span>Evaluator and course instructor</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <article class="card reveal">
+        <h3>Bridge Requirements</h3>
+          <ul class="clean-list">
+            <li>Hold at least a 400N three train car travelling across a 1200mm gap (Load Case 1)</li>
+            <li>Hold at least a 452N three train car, which increased its weight on every pass, travelling across a 1200mm gap (Load Case 2)</li>
+            <li>Made from a matboard with dimensions 32” × 40” × 0.05” and two 30mL tubes of Contact Cement</li>
+            <li>Must be between 1250mm and 1270mm and have a height less than 200mm</li>
+          </ul>
+        </article>
+        <article class="card reveal" data-delay="80">
+          <h3>Evaluation Criteria</h3>
+          <p>A bridge design with the lowest mass and the highest load capacity would be the best solution.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="reveal">Design & Construction</h2>
+        <h3 class="reveal" style="margin-bottom: 1rem; font-size: 1.15rem; color: var(--text-heading);">Analytical Approach</h3>
+        <div class="cards three" style="margin-bottom: 3rem;">
+          <article class="card reveal">
+            <h4>Hand Calculations</h4>
+            <p>Performed initial calculations for Design 0, covering tension, compression, shear, and glue capacity.</p>
+          </article>
+          <article class="card reveal" data-delay="30">
+            <h4>Force Diagrams</h4>
+            <p>Created shear force and bending moment diagrams to map out internal stress across the 1200mm span.</p>
+          </article>
+          <article class="card reveal" data-delay="60">
+            <h4>Python Simulation</h4>
+            <p>Used NumPy and Matplotlib to simulate various loads and iteratively optimize design parameters.</p>
+          </article>
+        </div>
+
+        <div class="reveal" style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 4rem;">
+          <figure style="flex: 1 1 300px; margin: 0;">
+            <img src="Graphs.png" alt="Simulation Graphs" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm); object-fit: contain;">
+            <figcaption style="text-align: center; font-size: 0.85rem; color: var(--text); margin-top: 0.5rem; background: var(--surface); padding: 0.5rem; border-radius: 8px; border: 1px solid var(--line);">Figure 1: The top two graphs are Shear Force and Bending Moment Diagrams for our final design. The 3rd graph shows the max load capability across the span of the bridge. All graphs were generated using Matplotlib on python.</figcaption>
+          </figure>
+          <figure style="flex: 1 1 300px; margin: 0;">
+            <img src="Calculations.png" alt="Hand Calculations" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm); object-fit: contain;">
+            <figcaption style="text-align: center; font-size: 0.85rem; color: var(--text); margin-top: 0.5rem; background: var(--surface); padding: 0.5rem; border-radius: 8px; border: 1px solid var(--line);">Figure 2: Detailed hand-calculations for shear and flexural capacity.</figcaption>
+          </figure>
+          <figure style="flex: 1 1 300px; margin: 0;">
+            <img src="Code.png" alt="Python Simulation Code" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm); object-fit: contain;">
+            <figcaption style="text-align: center; font-size: 0.85rem; color: var(--text); margin-top: 0.5rem; background: var(--surface); padding: 0.5rem; border-radius: 8px; border: 1px solid var(--line);">Figure 3: Python script for simulating and testing our final designs. You can enter the cross section parameters and the code would tell you the failure mode, load, and also give you the required graphs</figcaption>
+          </figure>
+        </div>
+
+        <h3 class="reveal" style="margin-bottom: 1.5rem; font-size: 1.15rem; color: var(--text-heading);">Construction Process</h3>
+        <div class="timeline reveal" style="margin-bottom: 3rem;">
+          <div class="timeline-item">
+            <strong>Step 1: Matboard Preparation</strong>
+            <p>Cutting of individual matboard pieces to prepare for assembly.</p>
+          </div>
+          <div class="timeline-item" data-delay="40">
+            <strong>Step 2: Reinforcement & Splices</strong>
+            <p>Installing diaphragms to mitigate shear buckling and gluing the splice sections with contact cement.</p>
+          </div>
+          <div class="timeline-item" data-delay="80">
+            <strong>Step 3: Final Assembly & Cure</strong>
+            <p>Mounting the top flange and allowing the completed bridge to cure for a minimum of 48 hours before testing.</p>
+          </div>
+        </div>
+
+        <div class="reveal" style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem;">
+          <figure style="flex: 1 1 400px; margin: 0;">
+            <img src="CuttingMatboard.png" alt="Cutting matboard pieces" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm); object-fit: cover;">
+            <figcaption style="text-align: center; font-size: 0.85rem; color: var(--text); margin-top: 0.5rem; background: var(--surface); padding: 0.5rem; border-radius: 8px; border: 1px solid var(--line);">Figure 4: Cutting of matboard.</figcaption>
+          </figure>
+          <figure style="flex: 1 1 400px; margin: 0;">
+            <img src="Construction.png" alt="Bridge assembly phase" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm); object-fit: cover;">
+            <figcaption style="text-align: center; font-size: 0.85rem; color: var(--text); margin-top: 0.5rem; background: var(--surface); padding: 0.5rem; border-radius: 8px; border: 1px solid var(--line);">Figure 5: Assembly of the bridge without the top flange.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="reveal">Final Design</h2>
+        <div class="cards two">
+          <article class="card reveal">
+            <h3>Final Design Features</h3>
+            <ul class="clean-list">
+              <p>1) Double-layer top flange to reduce flexural compression.</p>
+              <p>2) Increased web height to improve bending stiffness.</p>
+              <p>3) 12 diaphragms to mitigate shear buckling.</p>
+              <p>4) Splice offset from the middle of the bridge.</p>
+            </ul>
+          </article>
+          <article class="card reveal" data-delay="40" style="display: flex; gap: 1rem; flex-direction: row; justify-content: center; align-items: flex-start; outline: none; border: none; background: transparent; padding: 0; box-shadow: none;">
+            <figure style="width: 48%; margin: 0;">
+              <img src="cross-section.png" alt="Cross Section of Final Design" style="width: 100%; border-radius: 12px; object-fit: contain; box-shadow: var(--shadow-sm);">
+              <figcaption style="text-align: center; font-size: 0.85rem; color: var(--text); margin-top: 0.5rem; background: var(--surface); padding: 0.5rem; border-radius: 8px; border: 1px solid var(--surface-border);">Figure 6: Cross Section of Final Design</figcaption>
+            </figure>
+            <figure style="width: 48%; margin: 0;">
+              <img src="side-view.png" alt="Side View of Final Design" style="width: 100%; border-radius: 12px; object-fit: contain; box-shadow: var(--shadow-sm);">
+              <figcaption style="text-align: center; font-size: 0.85rem; color: var(--text); margin-top: 0.5rem; background: var(--surface); padding: 0.5rem; border-radius: 8px; border: 1px solid var(--surface-border);">Figure 7: Side View of Final Design</figcaption>
+            </figure>
+          </article>
+        </div>
+
+        <h2 class="reveal" style="margin-top: 2rem;">Results & Reflection</h2>
+        <div class="cards" style="margin-top: 1rem;">
+          <article class="card reveal">
+            <h3>Results</h3>
+            <p><strong>Predicted failure load:</strong> ~870 N<br/>
+            <strong>Dominant predicted failure mode:</strong> flexural compression<br/>
+            <strong>Actual outcome:</strong> premature failure at 0 N due to poor splice construction.</p>
+            <p>Due to an oversight while making our splice construction, our bridge failed on the first load case of an empty train. Despite using all our knowledge to create a strong design, we failed to build the right splice connection, compromising our other efforts. </p> 
+          </article>
+          <article class="card reveal" data-delay="40">
+            <h3>Reflection</h3>
+            <p>My most notable contributions in the design part of this project were doing hand calculations for design 0, produced engineering drawings showing critical features of the bridge, contributing to the iteration strategy. I also played a major role in bridge construction and assembly, allowing me to participate in both design and engineering. Finally, I helped compile requirements and design choices in a concise but informative design report, summarizing and justifying our efforts</p>
+            <p>In this case, theoretical performance did not equate to real-world success, as our idealized models did not fully capture the vulnerabilities of our physical designs. In this project, the actual outcome was heavily influenced by construction quality—particularly the design and reliability of connections. My team had not put as much thought and effort into designing the splice, as to designing the rest of the bridge. It was a misunderstanding on our part of what the weakest points of our bridge were and where we should have focused our efforts. However, through lived experiences like this, I was able to learn about what should be prioritized in engineering design. This experiential knowledge only comes through doing real-word design projects but makes a large impact in the grand scheme of engineering design, which is why I chose to add it as my fourth pillar. </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container tabs-container">
+        <h2 class="reveal">CTMFs Used in This Project</h2>
+        <div class="tabs-header reveal" data-delay="60">
+          <button class="tab-btn active" data-target="#ctmf-1">CTMF 1 — Requirements</button>
+          <button class="tab-btn" data-target="#ctmf-2">CTMF 2 — Iterating on designs</button>
+          <button class="tab-btn" data-target="#ctmf-3">CTMF 3 — Proxy Testing</button>
+        </div>
+        
+        <div class="tab-pane active" id="ctmf-1">
+          <article class="card reveal" style="border-top: 4px solid var(--hero-accent, var(--brand));">
+            <h3 style="margin-bottom: 0.5rem;">CTMF 1 — Requirements</h3>
+            <span class="tag" style="margin-bottom: 1.5rem; display: inline-block;">FRAMING</span>
+            
+            <h4 style="color: var(--hero-accent, var(--brand)); margin-bottom: 0.75rem;">What it is</h4>
+            <p style="margin-bottom: 1rem;">
+            Requirements are a framing tool that allow the designers to define their design space. They often come from the objectives outlined in the opportunity or from specific stakeholder expectations. Requirements can lead to the creation of evaluation criteria, which help in determining which design best meets the objectives. Overall, requirements help guide the thought process when approaching a design challenge. 
+            </p>
+            <h4 style="color: var(--hero-accent, var(--brand)); margin-bottom: 0.75rem;">How Did it Help</h4>
+            <p style="margin-bottom: 1rem;">
+            “Build a bridge” is an extremely vague demand. There are many kinds of bridges that each serve different functions. At the beginning of the bridge project, defining requirements played a critical role in shaping our approach to this project. These requirements outlined the minimum criteria our bridge needed to satisfy, such as load capacity, material constraints, and dimensional limits. By using these expectations to guide our design, we were able to better understand the problem and ensure that our design decisions aligned with the project goals. Furthermore, the requirements helped us understand what the key things were that this project was looking for. Once we were able to meet the minimum requirements, we used them to figure out which criteria we wanted our bridge design to excel in.   
+            </p>
+            <h4 style="color: var(--hero-accent, var(--brand)); margin-bottom: 0.75rem;">What Did I learn</h4>
+            <p style="margin-bottom: 1rem;">
+            Working with requirements showed me the importance of properly framing a problem before attempting to solve it. I learned that clearly defined criteria not only provide direction, but also help ensure that the final design is both feasible and aligned with expectations. In the future, I will prioritize establishing strong requirements at the start of any project to guide my thinking and decision-making.
+            </p>
+          </article>
+        </div>
+        
+        <div class="tab-pane" id="ctmf-2">
+          <article class="card" style="border-top: 4px solid var(--hero-accent, var(--brand));">
+            <h3 style="margin-bottom: 0.5rem;">CTMF 2 — Iterating on designs</h3>
+            <span class="tag" style="margin-bottom: 1.5rem; display: inline-block;">DIVERGING</span>
+            
+            <h4 style="color: var(--hero-accent, var(--brand)); margin-bottom: 0.75rem;">What it is</h4>
+            <p style="margin-bottom: 1rem;">
+             When it came to developing our solution, we used iterating on designs as a diverging tool. Iterating involves repeatedly modifying and refining a design to explore multiple possible solutions. Iteration works by cycling through repeated versions of a design, where each version introduces changes based on feedback, testing, or new ideas. Iterating on designs helps expand the design space by introducing new ideas.</p>
+            <div style="display: flex; gap: 2.5rem; align-items: flex-start; flex-wrap: wrap;">
+              <div style="flex: 1; min-width: 300px;">
+                <h4 style="color: var(--hero-accent, var(--brand)); margin-bottom: 0.75rem;">How Did it Help</h4>
+                <p style="margin-bottom: 1.5rem;">
+                  Iterating on designs allowed us to continuously improve our cross-section design to perform better against the evaluation criteria. Each prototype gave us an additional option to choose from and test and also helped us better understand what influenced the strength of our bridge design. After doing calculations for each iteration, we were able to use the results we got to guide improvements. For example, recognizing that increasing the glue tab width would increase the strength of our design was an iteration that made it to our final design. Over time, this helped us identify crucial design features that formed the fundamental parts of our final bridge design.
+                </p>
+                <h4 style="color: var(--hero-accent, var(--brand)); margin-bottom: 0.75rem;">What Did I learn</h4>
+                <p style="margin-bottom: 1rem;">
+                  Using iteration taught me that strong designs rarely emerge fully formed—they develop over time through repeated refinement. I learned that progress often comes from exploring multiple versions rather than perfecting a single idea early. Moving forward, I will use iteration more deliberately to ensure I explore a wider range of possibilities before converging on a final design.
+                </p>
+              </div>
+              <div style="flex: 0 0 320px; display: flex; flex-direction: column; gap: 1.5rem; min-width: 300px; margin-top: 1rem;">
+                <figure style="margin: 0;">
+                  <img src="Iteration 1.png" alt="Bridge design iteration 1" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm);">
+                  <figcaption style="text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem;">Figure 8: Design Iteration 1 — Doubling top flange thickness.</figcaption>
+                </figure>
+                <figure style="margin: 0;">
+                  <img src="Iteration 3.png" alt="Bridge design iteration 3" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm);"> 
+                  <figcaption style="text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem;">Figure 9: Design Iteration 3 — Increasing glue tab width.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+        <div class="tab-pane" id="ctmf-3">
+          <article class="card" style="border-top: 4px solid var(--hero-accent, var(--brand));">
+            <h3 style="margin-bottom: 0.5rem;">CTMF 3 — Proxy Testing</h3>
+            <span class="tag" style="margin-bottom: 1.5rem; display: inline-block;">REPRESENTING</span>
+            
+            <div style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; margin-bottom: 2rem; margin-top: 1rem;">
+              <figure style="flex: 0 0 380px; margin: 0; min-width: 300px;">
+                <img src="Code.png" alt="Python Proxy Testing Code" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm);">
+                <figcaption style="text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem;">Figure 10: Python script developed for proxy testing of bridge iterations.</figcaption>
+              </figure>
+              <div style="flex: 1; min-width: 300px;">
+                <h4 style="color: var(--hero-accent, var(--brand)); margin-bottom: 0.75rem;">What it is</h4>
+                <p style="margin-bottom: 1rem;">
+                 We used proxy testing as a representing tool to test our design and learn how it would react under the predicted load cases. Proxy testing works by using indirect representations such as simulations, calculations, or code to approximate how a system would behave in real life when physical prototyping is not possible. It is extremely useful as it allows the designers to represent and demonstrate the intended function of the design when it is not feasible to create a fully working prototype.
+                </p>
+                <h4 style="color: var(--hero-accent, var(--brand)); margin-bottom: 0.75rem;">How Did it Help</h4>
+                <p style="margin-bottom: 1rem;">
+                  Proxy testing allowed us to evaluate performance despite constraints in time, materials, and fabrication. By using code-based simulations, we were able to test bridge behaviour, make iterations to our design, and compare results without building a physical bridge prototype. This made it easier to explore multiple scenarios quickly and identify important features during the design process. Furthermore, with code there was no concern about building multiple prototypes. Performing proxy testing with code allowed extensive repetition and testing.  
+                </p>
+              </div>
+            </div>
+            <h4 style="color: var(--hero-accent, var(--brand)); margin-bottom: 0.75rem;">What Did I learn</h4>
+            <p style="margin-bottom: 1rem;">
+              Using proxy testing showed me how using the right representing tools for a design can be just as valuable as physical testing in engineering design. I learned that simulations and code can effectively model system behaviour and support decision-making when real-world testing is limited. Moving forward, I will use proxy testing earlier in the design process to validate ideas before committing to fabrication. Moreover, proxy testing can help build an argument when trying to recommend a design because it proves that certain features work in practical applications.
+          </article>
+        </div>
+      </div>
+    </section>
+
+  <div class="reveal" style="display: flex; justify-content: center; margin-top: 2rem;">
+    <a href="praxis-ii-handhold-motor-brush.html" class="btn btn-primary">Continue to PRAXIS II</a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-panel">
+        <p>Adi Prasad | ESC102  | Engineering Design Portfolio | [adiprasad190@gmail.com] </p>
+        <p>Updated <span data-year></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
